@@ -15,7 +15,7 @@ public class Car {
         if (nopeus < 0) {
             nopeus = 0;
          }
-         System.out.println("Auto: " + merkki + " " + malli + " " + "Nopeus: " + nopeus + "km/h");
+         System.out.println("Auto: " + merkki + " " + malli + ", " + "Nopeus: " + nopeus + "km/h");
     }
 
     public void accelerate(int kiihdytys) {

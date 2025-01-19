@@ -31,9 +31,9 @@ public class App {
                         break;
 
                     case 2:
-                         System.out.print("Anna auton merkki:");
+                         System.out.print("Anna uusi auton merkki:");
                          merkki = sc.nextLine();
-                         System.out.print("Anna auton malli:");
+                         System.out.print("Anna uusi auton malli:");
                          malli = sc.nextLine();
 
                          newCar = new Car(merkki, malli);
