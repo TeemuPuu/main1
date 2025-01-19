@@ -12,6 +12,17 @@ public class Car {
     }
 
     public void tiedot() {
-        System.out.println("Auto: " + merkki + " " + malli + " " + "Nopeus: " + nopeus + "km/h");
+        if (nopeus < 0) {
+            nopeus = 0;
+         }
+         System.out.println("Auto: " + merkki + " " + malli + " " + "Nopeus: " + nopeus + "km/h");
+    }
+
+    public void accelerate(int kiihdytys) {
+        this.nopeus += kiihdytys;
+    }
+
+    public void decelerate(int hidastus) {
+        this.nopeus -= hidastus;
     }
 }

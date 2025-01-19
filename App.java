@@ -39,8 +39,22 @@ public class App {
                          newCar = new Car(merkki, malli);
                          break;
                     case 3:
+                         System.out.print("Kuinka monta km/h haluat kiihdyttää?");
+                         int kiihdytys = Integer.parseInt(sc.nextLine());
+                         if (kiihdytys > 0) {
+                            newCar.accelerate(kiihdytys);
+                         } else {
+                            System.out.println("Nopeuden täytyy olla positiivinen luku.");
+                         }
                          break;
                     case 4:
+                         System.out.print("Kuinka monta km/h haluat hidastaa?");
+                         int hidastus = Integer.parseInt(sc.nextLine());
+                         if (hidastus > 0) {
+                            newCar.decelerate(hidastus);
+                         } else {
+                            System.out.println("Nopeuden täytyy olla positiivinen luku.");
+                         }
                          break;
                     case 0:
                          System.out.println("Kiitos ohjelman käytöstä.");
