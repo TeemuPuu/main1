@@ -36,7 +36,8 @@ public class App {
                          System.out.print("Anna uusi auton malli:");
                          malli = sc.nextLine();
 
-                         newCar = new Car(merkki, malli);
+                         newCar.setMerkki(merkki);
+                         newCar.setMalli(malli);
                          break;
                     case 3:
                          System.out.print("Kuinka monta km/h haluat kiihdyttää?");

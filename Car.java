@@ -11,6 +11,22 @@ public class Car {
         this.nopeus = 0; // Nopeus alkutilanteessa 0.
     }
 
+    public String getMerkki() {
+        return merkki;
+    }
+
+    public String getMalli() {
+        return malli;
+    }
+
+    public void setMerkki(String merkki) {
+        this.merkki = merkki;
+    }
+
+    public void setMalli(String malli) {
+        this.malli = malli;
+    }
+
     public void tiedot() {
         if (nopeus < 0) {
             nopeus = 0;
